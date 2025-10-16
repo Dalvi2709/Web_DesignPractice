@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>header</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            text-decoration: none;
+            font-family: sans-serif;
+        }
+        header{
+            background-color: #ece3f5;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            padding:  2rem 5%;
+        }
+        
+        header h1 a{
+            color: rgb(10, 10, 10);
+        }
+
+        header h1{
+            margin-left: 10px;
+        }
+       
+        nav ul{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        
+        nav ul li a{
+            font-size: larger;
+            color: rgb(117, 38, 1);
+        }
+        nav ul li a:hover{
+            color: white;
+            text-decoration: underline;
+        }
+
+        .herosection{ background-color: #ece3f5; display: flex; flex-direction: column; justify-content: space-around; align-items: center; align-content: space-around; gap: 2rem; padding: 4rem 10%;}
+        .herosection p{ text-align: justify;}
+        .herosection button{ padding: 10px;}
+        .herosection button:hover{ color: tomato; background-color: black;}
+
+        .services{background-color: #ffffff; display: flex; justify-content: center; align-items: center; flex-direction: column; gap: 4rem; padding: 4rem 10%; text-align: center;}
+        .servicesBox{display: flex; justify-content: space-between; align-items: center; gap: 2rem; padding: 3rem;}
+        .box{ border: 1px solid gray; padding: 2rem; display: flex; flex-direction: column; align-items: center; justify-content: space-around; gap: 1rem; border-radius: 20px; box-shadow: 0 2px 8px rgba(59, 58, 58, 0.1); background-color: aqua;}
+        .box:hover{ background-color: black; color: white;}
+
+        footer {
+            background: #0a74da;
+            color: #fff;
+            text-align: center;
+            padding: 1.5rem 5%;
+          }
+      
+          footer p {
+            font-size: 1rem;
+          }
+    </style>
+</head>
+<body>
+    <header>
+        <h1><a href="">Logo</a></h1>
+        <nav>
+            <ul>
+                <li><a href="#Home">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="#Services">services</a></li>
+                <li><a href="">packages</a></li>
+                <li><a href="#contact">contact us</a></li>
+            </ul>
+        </nav>
+    </header>
+<hr>
+    <section class="herosection" id="Home">
+       <h2>Welcome to herosection</h2>
+       <p>hey i am landing page and the section of hero section it is the 1st section of page</p>
+       <button type="button">Get started</button>
+    </section>
+<hr>
+    <section class="services" id="Services">
+        <h2>Welcome to Services Section</h2>
+        <div class="servicesBox">
+            <div class="box">
+                <h3>Web Design</h3>
+                <p>providing high scalling web solutions</p>
+              </div>
+              <div class="box">
+                <h3>Desktop Design</h3>
+                <p>providing high scalling web solutions</p>
+              </div>
+              <div class="box">
+                <h3>Mobile Design</h3>
+                <p>providing high scalling web solutions</p>
+              </div>
+        </div>
+    </section>
+<hr>
+    <footer id="contact">
+        <p>© 2025 MyLanding. All rights reserved.</p>
+      </footer>
+</body>
+</html>
