@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <style>
+        *{ margin: 0; padding: 0; text-decoration: none; list-style: none; }
+        header{ display: flex; justify-content: space-between; align-items: center; padding: 2rem 5%;}
+        header h1{color: rgb(230, 75, 28); letter-spacing: 2px;}
+        header nav ul { display: flex; justify-content: space-around; align-items: center; gap: 30px;}
+        header nav ul li a{ font-weight: bolder; color: black; letter-spacing: 1px; font-size: larger;}
+        header nav ul li a:hover{text-decoration: underline; }
+        header button{background-color: rgb(230, 75, 28); border-radius: 5px; color: white; padding: 1rem; border: none;}
+        
+        .hero{ background: url("Capture.JPG") no-repeat center center/cover; height: 125vh; box-shadow: 0px 4px 5px 0px black; }
+
+        .about{display: flex; flex-direction: column; gap: 15px; justify-content: center; align-items: center; margin: 1rem;}
+        .about .aboutdiv1{display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 3rem 20%; gap: 10px; text-align: center;}
+        .about .aboutdiv1 h3{font-weight: bolder; color: rgb(230, 75, 28); font-size: large;}
+        .about .aboutdiv1 p:nth-child(2){color: rgb(14, 14, 65); font-size: xx-large; word-spacing: 4px; font-weight: 800;}
+        .about .aboutdiv1 p:nth-child(3){color: rgb(115, 115, 240); font-size: medium; word-spacing: 1px;}
+        .about .aboutdiv2{display: flex; justify-content: space-between; align-items: center; gap: 40px; padding: 2rem 15%; }
+        .about .aboutdiv2 .innerbox{text-align: center; padding: 1rem; background-color: rgb(233, 221, 221); border-radius: 10px; box-shadow: 10px 0px 10px 0px black; }
+        .about .aboutdiv2 .innerbox h3{color: rgb(10, 10, 58); font-size: larger; font-weight: 600; margin-bottom: 10px;}
+        .about .aboutdiv2 .innerbox p{color: rgb(122, 122, 255); }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>emexso</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#review">Review</a></li>
+                <li><a href="#product">Product</a></li>
+                <li><a href="#faq">faq</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <button>Shop Now</button>
+    </header>
+
+    <section class="hero">
+     
+    </section>
+
+    <section class="about">
+        <div class="aboutdiv1">
+            <h3>ABOUT THE WATCH</h3>
+            <p>Awesome Digital Watch Can <br> Make Your Life Easier</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero esse accusamus ducimus consequuntur beatae,<br> est nisi sapiente nam vitae sint voluptate distinctio?</p>
+        </div>
+        <div class="aboutdiv2">
+            <div class="innerbox">
+                <h3>Attractive Design</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere doloribus impedit repellat distinctio autem voluptatibus.</p>
+            </div>
+            <div class="innerbox">
+                <h3>User Friendly</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere doloribus impedit repellat distinctio autem voluptatibus.</p>
+            </div>
+            <div class="innerbox">
+                <h3>LifeTime gaurantee</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere doloribus impedit repellat distinctio autem voluptatibus.</p>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
