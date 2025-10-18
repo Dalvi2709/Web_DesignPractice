@@ -123,6 +123,87 @@
         .about .aboutdiv2 .innerbox p {
             color: rgb(122, 122, 255);
         }
+
+
+        .features-section {
+            background: #f8f8f8;
+            color: #222;
+            padding: 40px 5%;
+            text-align: center;
+            width: 100%;
+            max-width: 1220px;
+            margin: auto;
+        }
+
+        .section-subtitle {
+            color: #f15b43;
+            font-weight: 600;
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #14213d;
+            margin-bottom: 15px;
+        }
+
+        .section-desc {
+            max-width: 700px;
+            margin: 0 auto 40px;
+            color: #555;
+            line-height: 1.6;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: 1fr auto 1fr;
+            align-items: center;
+            gap: 30px;
+        }
+
+        .feature-box {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        .feature {
+            text-align: left;
+        }
+
+        .feature h3 {
+            font-size: 1.2rem;
+            color: #14213d;
+            margin-bottom: 8px;
+        }
+
+        .feature p {
+            font-size: 0.95rem;
+            color: #555;
+            line-height: 1.5;
+        }
+
+        .feature-image img {
+            width: 220px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .feature-image {
+                order: -1;
+            }
+
+            .feature-image img {
+                width: 180px;
+            }
+        }
     </style>
 </head>
 
@@ -172,6 +253,43 @@
         </div>
     </section>
 
+    <section class="features-section">
+        <h4 class="section-subtitle">FEATURES</h4>
+        <h1 class="section-title">The Watch Has Lots Of <br> Excellent Features</h1>
+        <p class="section-desc">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hic explicabo voluptas nisi iste
+            reiciendis, tempore commodi necessitatibus, laborum laudantium.
+        </p>
+
+        <div class="features-grid">
+            <div class="feature-box left">
+                <div class="feature">
+                    <h3>Notification Alert</h3>
+                    <p>Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci.</p>
+                </div>
+                <div class="feature">
+                    <h3>Instant Video Call</h3>
+                    <p>Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci.</p>
+                </div>
+            </div>
+
+            <div class="feature-image">
+                <img src="watch img.JPG"
+                    alt="Smartwatch">
+            </div>
+
+            <div class="feature-box left">
+                <div class="feature">
+                    <h3>User Live Chat</h3>
+                    <p>Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci.</p>
+                </div>
+                <div class="feature">
+                    <h3>Install Any App</h3>
+                    <p>Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 
 </html>
