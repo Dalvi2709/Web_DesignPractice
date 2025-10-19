@@ -1,14 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing page</title>
     <style>
-        
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+            box-sizing: border-box;
+            list-style: none;
+            text-decoration: none;
+        }
+
+        .head {
+            margin-top: 5px;
+            background: url("Capture\ 1.JPG") center center/cover;
+            height: 15vh;
+            border-bottom: 2px groove;
+        }
+
+        nav ul {
+            padding: 1.5rem;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            gap: 20px;
+        }
+
+        nav ul li a {
+            color: rgb(71, 69, 69);
+            text-align: center;
+            letter-spacing: 1px;
+            font-size: medium;
+            border-left: 1px groove rgb(209, 208, 208);
+            padding: 10px;
+        }
+
+        nav ul li a:hover {
+            color: black;
+            font-weight: 700;
+        }
+
+        .hero {
+            background: url("Capture\ 2.JPG") center center/cover;
+            height: 80vh;
+            border-bottom: 2px groove gray;
+        }
+
+        .services{
+            text-align: center;
+            padding: 2rem;
+            margin-top: 1rem;
+        }
+
+        .services h4{
+            margin-bottom: 2rem;
+           
+        }
+
+        .services .mainbox{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .services .mainbox .innerbox{
+            padding: 1rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            gap: 10px;
+            border: 1px groove rgb(245, 236, 236);
+        }
+        .innerbox h3{
+            color: rgb(38, 38, 94);
+        }
+        .innerbox img{
+            border-radius: 100%;
+        }
+
+        .innerbox p{
+            color: rgb(176, 129, 219);
+        }
     </style>
 </head>
+
 <body>
-    
+    <section class="head">
+
+    </section>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#home">ABOUT AGENCY</a></li>
+                <li><a href="#home">OUR SERVICES</a></li>
+                <li><a href="#home">NEWS</a></li>
+                <li><a href="#home">TESTIMONIALS</a></li>
+                <li><a href="#home">CONTACT</a></li>
+                <li><a href="#home">SEARCH</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+
+    </section>
+
+    <section class="services">
+        <h4>Our services</h4>
+        <div class="mainbox">
+            <div class="innerbox">
+                <img src="Capture 3.JPG" alt="img" width="50px" height="50px">
+                <h3>12 YEARS OF EXPERIENCE</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus illum, quis optio cumque ex
+                    maiores.</p>
+            </div>
+            <div class="innerbox">
+                <img src="Capture 4.JPG" alt="img" width="50px" height="50px">
+                <h3>BEST INDUSTRY EXPERTS</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus illum, quis optio cumque ex
+                    maiores.</p>
+            </div>
+            <div class="innerbox">
+                <img src="Capture 5.JPG" alt="img" width="50px" height="50px">
+                <h3>FAST EFFECIVE SOLUTIONS</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus illum, quis optio cumque ex
+                    maiores.</p>
+            </div>
+            <div class="innerbox">
+                <img src="Capture 6.JPG" alt="img" width="50px" height="50px">
+                <h3>FLEXIBILE PRICING SYSTEM</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus illum, quis optio cumque ex
+                    maiores.</p>
+            </div>
+        </div>
+    </section>
 </body>
+
 </html>
