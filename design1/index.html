@@ -26,6 +26,7 @@
             padding: 2rem 3rem;
             border-bottom: 0.5px groove rgb(224, 223, 223);
             flex-wrap: wrap;
+            box-shadow: 0px 0px 6px 2px black;
         }
 
         nav ul {
@@ -39,6 +40,28 @@
             color: black;
             font-size: 1rem;
         }
+
+        /* Hover text color change */
+        nav a:hover {
+            color: #007bff;
+        }
+
+        /* Underline effect using ::after pseudo-element */
+        nav a::after {
+            content: "";
+            position: absolute;
+            bottom: -3px;
+            left: 0;
+            width: 0%;
+            height: 2px;
+            background: #007bff;
+            transition: width 0.3s ease;
+        }
+
+        nav a:hover::after {
+            width: 100%;
+        }
+
 
         .hero {
             background: url("capture\ 1.JPG") center/cover no-repeat;
@@ -64,13 +87,19 @@
         }
 
         .inner {
-
             background-color: rgb(248, 240, 240);
             border: 1px groove rgb(190, 190, 190);
             border-radius: 10px;
             box-shadow: 0px 0px 5px 2px rgb(200, 200, 200);
             padding: 2rem;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
         }
+
+        .inner:hover {
+            transform: translateY(-8px);
+            box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+          }
 
         .inner img {
             border-radius: 50%;
@@ -154,7 +183,7 @@
         <div><strong>iService</strong></div>
         <nav>
             <ul>
-                <li><a href="">Services</a></li>
+                <li><a href="#services">Services</a></li>
                 <li><a href="">Advantages</a></li>
                 <li><a href="">Projects</a></li>
                 <li><a href="">Team</a></li>
@@ -170,7 +199,7 @@
 
     </section>
 
-    <section class="services">
+    <section class="services" id="services">
         <div>
             <h6>AREAS WHAT WE SERV</h6>
             <h2>Our Services</h2>
