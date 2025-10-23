@@ -16,6 +16,10 @@
         }
 
         header {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background-color: white;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -80,7 +84,7 @@
             margin-bottom: 10px;
         }
 
-        footer{
+        footer {
             padding: 2rem;
             display: flex;
             justify-content: center;
@@ -96,7 +100,7 @@
         max-width: 768px → small tablets
 
         max-width: 480px → mobiles*/
-        
+
         @media (max-width: 1024px) {
             .outer {
                 grid-template-columns: repeat(2, 1fr);
@@ -121,8 +125,8 @@
                 height: 60vh;
             }
 
-            footer{
-                
+            footer {
+
                 text-align: center;
             }
         }
@@ -140,7 +144,7 @@
                 padding: 1.5rem;
             }
 
-           
+
         }
     </style>
 </head>
