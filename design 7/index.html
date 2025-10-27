@@ -51,10 +51,52 @@
             width: 100%;
         }
 
+        .services{
+            background-color: black;
+            color: white;
+            padding: 2rem 5%;
+        }
+
+        .services h2{
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .outerdiv{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            justify-content: space-around;
+        }
+
+        .innerdiv{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            background-color: white;
+            color: black;
+            padding: 1rem;
+        }
+
+        .innerdiv img {
+            border-radius: 50%;
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+        }
+
+        .innerdiv a:hover{
+            text-decoration: underline;
+        }
+
         @media (max-width: 768px) {
             header {
                 flex-direction: column;
                 gap: 20px;
+            }
+
+            .outerdiv{
+                grid-template-columns: 1fr 1fr;
             }
 
             .hero {
@@ -65,6 +107,11 @@
         @media (max-width: 480px){
             .hero {
                 height: 40vh;
+            }
+
+            .outerdiv{
+                
+                grid-template-columns: 1fr;
             }
         }
     </style>
@@ -86,6 +133,36 @@
     <section class="hero">
           
     </section>
+
+    <Section class="services">
+        <h2>Repairing services</h2>
+        <div class="outerdiv">
+            <div class="innerdiv">
+                <img src="Capture 2.JPG" alt="image">
+                <h4>Carpentary</h4>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui porro velit repudiandae.</p>
+                <a href="">MORE</a>
+            </div>
+            <div class="innerdiv">
+                <img src="Capture 2.JPG" alt="image">
+                <h4>Carpentary</h4>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui porro velit repudiandae.</p>
+                <a href="">MORE</a>
+            </div>
+            <div class="innerdiv">
+                <img src="Capture 2.JPG" alt="image">
+                <h4>Carpentary</h4>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui porro velit repudiandae.</p>
+                <a href="">MORE</a>
+            </div>
+            <div class="innerdiv">
+                <img src="Capture 2.JPG" alt="image">
+                <h4>Carpentary</h4>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui porro velit repudiandae.</p>
+                <a href="">MORE</a>
+            </div>
+        </div>
+    </Section>
 </body>
 
 </html>
