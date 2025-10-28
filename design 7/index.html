@@ -89,6 +89,30 @@
             text-decoration: underline;
         }
 
+        .aboutus{
+            margin-top: 2rem;
+            padding: 1rem;
+            text-align: center;
+            
+        }
+
+        .outerbox{
+            margin-top: 2rem;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            justify-content: space-around;
+            gap: 20px;
+            padding: 3rem;
+        }
+
+        .innerbox{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            border: 1px groove grey;
+            padding: 1rem;
+        }
+
         @media (max-width: 768px) {
             header {
                 flex-direction: column;
@@ -102,6 +126,10 @@
             .hero {
                 height: 60vh;
             }
+
+            .outerbox {
+                grid-template-columns: 1fr 1fr;
+            }
         }
 
         @media (max-width: 480px) {
@@ -111,6 +139,10 @@
 
             .outerdiv {
 
+                grid-template-columns: 1fr;
+            }
+
+            .outerbox {
                 grid-template-columns: 1fr;
             }
         }
