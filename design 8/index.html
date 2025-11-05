@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            text-decoration: none;
+            list-style: none;
+            font-family: sans-serif;
+        }
+
+        header{
+
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            padding: 2rem 5%;
+        }
+
+        nav{
+            display: flex;
+            gap: 10px;
+        }
+
+        .hero{
+            background: url("hero.jpg") center/cover no-repeat;
+            height: 90vh;
+            width: 100%;
+        }
+
+        .services{
+            text-align: center;
+            padding: 2rem 5%;
+            margin-top: 1rem;
+        }
+
+        .outerbox{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 20px;
+            padding: 1rem;
+        }
+
+        .innerbox{
+            border: 1px groove black;
+            padding: 1rem;
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+        .innerbox img{
+            align-self: center;
+            border-radius: 50%;
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+        }
+
+        footer{
+            background-color: aqua;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        @media (max-width : 867px){
+            header{
+                flex-wrap: wrap;
+                align-self: center;
+            }
+            nav{
+                flex-wrap: wrap;
+                align-self: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1><strong>Iservice</strong></h1>
+        <nav>
+            <a href="">Services</a>|
+            <a href="">Advantages</a>|
+            <a href="">Projects</a>|
+            <a href="">Team</a>|
+            <a href="">Pricing</a>|
+            <a href="">Reviews</a>|
+            <a href="">Partners</a>|
+            <a href="">FAQ</a>|
+            <a href="">Contact us</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+
+    </section>
+
+    <section class="services">
+        <h4>AREAS WHAT WE SERV</h4>
+        <h2>Our Services</h2>
+
+        <div class="outerbox">
+            <div class="innerbox">
+                <img src="Capture.JPG" alt="">
+                <h3>Corporation Solution</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti, modi fugit minima eaque expedita aperiam ex voluptas! Quisquam, eius expedita?</p>
+            </div>
+            <div class="innerbox">
+                <img src="Capture.JPG" alt="">
+                <h3>Corporation Solution</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti, modi fugit minima eaque expedita aperiam ex voluptas! Quisquam, eius expedita?</p>
+            </div>
+            <div class="innerbox">
+                <img src="Capture.JPG" alt="">
+                <h3>Corporation Solution</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti, modi fugit minima eaque expedita aperiam ex voluptas! Quisquam, eius expedita?</p>
+            </div>
+            <div class="innerbox">
+                <img src="Capture.JPG" alt="">
+                <h3>Corporation Solution</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti, modi fugit minima eaque expedita aperiam ex voluptas! Quisquam, eius expedita?</p>
+            </div>
+            <div class="innerbox">
+                <img src="Capture.JPG" alt="">
+                <h3>Corporation Solution</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti, modi fugit minima eaque expedita aperiam ex voluptas! Quisquam, eius expedita?</p>
+            </div>
+            <div class="innerbox">
+                <img src="Capture.JPG" alt="">
+                <h3>Corporation Solution</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti, modi fugit minima eaque expedita aperiam ex voluptas! Quisquam, eius expedita?</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Copyright @2025</p>
+    </footer>
+</body>
+</html>
