@@ -40,19 +40,19 @@
             font-weight: 600;
         }
 
-        nav ul li {
+        .navbar {
             display: inline-block;
             margin-right: 10px;
         }
 
-        nav ul li a {
+        .navbar a {
             color: white;
             font-weight: 500;
             font-size: 18px;
             transition: all 0.4s;
         }
 
-        nav ul li a:hover {
+        .navbar a:hover {
             text-decoration: underline;
             color: orange;
         }
@@ -176,13 +176,13 @@
         <a href="#" class="logo">LO<span style="color: red;">GO</span></a>
         <nav>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Carier</a></li>
-                <li><a href="#">Contact</a></li>
-                <button type="button">Sign Up</button>
-                <button type="button">Sign Up</button>
+                <li class="navbar"><a href="#">Home</a></li>
+                <li class="navbar"><a href="#">About</a></li>
+                <li class="navbar"><a href="#services">Services</a></li>
+                <li class="navbar"><a href="#">Carier</a></li>
+                <li class="navbar"><a href="#contact">Contact</a></li>
+                <button type="button" class="navbar">Sign Up</button>
+                <button type="button" class="navbar">Sign Up</button>
             </ul>
         </nav>
     </header>
@@ -191,7 +191,7 @@
 
     </section>
 
-    <section class="services">
+    <section class="services" id="services">
         <h2>Servise</h2>
         <div class="outer">
             <div class="inner">
@@ -237,7 +237,7 @@
         </div>
     </section>
 
-    <footer>
+    <footer id="contact">
         <p>@CopyRight all 2045</p>
     </footer>
 </body>
