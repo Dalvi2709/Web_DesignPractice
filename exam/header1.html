@@ -123,12 +123,19 @@
             .services .outer {
                 grid-template-columns: repeat(3, 1fr);
             }
+            .hero {
+                height: 70vh;
+            }
         }
 
         @media (max-width : 700px) {
             header {
                 flex-direction: column;
                 gap: 1.5rem;
+            }
+
+            .hero {
+                height: 50vh;
             }
 
             .services .outer {
@@ -139,6 +146,9 @@
         @media (max-width : 500px) {
             .services .outer {
                 grid-template-columns: repeat(1, 1fr);
+            }
+            .hero {
+                height: 40vh;
             }
         }
     </style>
