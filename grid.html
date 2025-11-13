@@ -42,35 +42,24 @@
         .sidebar {
             border: 1px solid black;
             grid-row-start: 2;
-            grid-row-end: 5;
+            grid-row-end: 6;
 
         }
 
-        .content {
+        .conten2 {
             border: 1px solid black;
-            grid-row-start: 2;
-            grid-row-end: 5;
             grid-column-start: 2;
             grid-column-end: 4;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-        }
-
-
-        .content .conten2 {
-            border: 1px solid black;
-            grid-column-start: 1;
-            grid-column-end: 3;
+            grid-row-start: 2;
+            grid-row-end: 4;
 
         }
 
-        .conten3 {
-            border: 1px solid black;
-
-        }
-
+        .conten3,
         .conten4 {
             border: 1px solid black;
+            grid-row-start: 4;
+            grid-row-end: 6;
 
         }
 
@@ -90,11 +79,11 @@
         <div class=" items sidebar">
             <span> sidebar</span>
         </div>
-        <div class=" items content">
-            <div class=" items conten2"> <span> content 1</span></div>
-            <div class=" items conten3"> <span> content 2</span></div>
-            <div class=" items conten4"> <span> content 3</span></div>
-        </div>
+
+        <div class=" items conten2"> <span> content 1</span></div>
+        <div class=" items conten3"> <span> content 2</span></div>
+        <div class=" items conten4"> <span> content 3</span></div>
+
         <div class=" items footer">
             <span> footer</span>
         </div>
