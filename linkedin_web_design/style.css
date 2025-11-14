@@ -66,5 +66,21 @@
 }
 
 
+@media (max-width : 1160px){
+    .header{
+        flex-direction: column;
+    }
+
+    .navbar ul  {
+        margin-top: 1rem;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        gap: 1rem;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+}
+
 
 
