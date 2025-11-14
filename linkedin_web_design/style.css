@@ -19,7 +19,7 @@
     z-index: 100px;
 }
 
-.header>a{
+.logo{
     color: #0E3B2C;
     font-size: 30px;
     font-weight: 700;
@@ -39,6 +39,11 @@
     justify-content: space-evenly;
 }
 
+.navbar {
+    display: flex;
+    align-items: center;
+}
+
 .navbar ul li a{
     margin-right: 2rem;
     color: #0E3B2C;
@@ -53,7 +58,7 @@
     transition: all 0.3s;
 }
 
-.navbar ul button{
+.primary-btn{
     padding: 1rem;
     border: none;
     border-radius: 2rem;
@@ -71,7 +76,7 @@
         flex-direction: column;
     }
 
-    .navbar ul  {
+    .navbar{
         margin-top: 1rem;
         display: flex;
         justify-content: center;
@@ -79,6 +84,8 @@
         gap: 1rem;
         align-items: center;
         flex-wrap: wrap;
+        align-content: center;
+        justify-items: center;
     }
 }
 
