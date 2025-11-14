@@ -19,22 +19,22 @@
     z-index: 100px;
 }
 
-.logo{
+.logo {
     color: #0E3B2C;
     font-size: 30px;
     font-weight: 700;
 }
 
-.header span{
+.header span {
     color: rgba(146, 17, 17, 0.705);
 }
 
 
-.header>a:hover{
+.header>a:hover {
     font-size: 32px;
 }
 
-.navbar ul li{
+.navbar ul li {
     display: inline-block;
     justify-content: space-evenly;
 }
@@ -44,21 +44,21 @@
     align-items: center;
 }
 
-.navbar ul li a{
+.navbar ul li a {
     margin-right: 2rem;
     color: #0E3B2C;
     font-size: 18px;
     font-weight: 600;
 }
 
-.navbar ul li a:hover{
+.navbar ul li a:hover {
     text-decoration: underline;
     font-size: 19px;
     color: rgba(87, 20, 20, 0.651);
     transition: all 0.3s;
 }
 
-.primary-btn{
+.primary-btn {
     padding: 1rem;
     border: none;
     border-radius: 2rem;
@@ -71,16 +71,16 @@
     cursor: pointer;
 }
 
-.hero{
-    background-color: #2C4C3D; 
-    height: 80vh;   
+.hero {
+    background-color: #2C4C3D;
+    height: 80vh;
 }
 
-.hero .box{
+.hero .box {
     padding: 2rem 10%;
 }
 
-.hero .box .rental{
+.hero .box .rental {
     background-color: #4c7c66;
     color: yellow;
     letter-spacing: 2px;
@@ -91,47 +91,49 @@
     cursor: pointer;
 }
 
-.hero .box .rental:hover{
+.hero .box .rental:hover {
     background-color: #e4ece959;
     color: rgba(7, 7, 7, 0.952);
     font-weight: 700;
     font-size: 15px;
 }
 
-.hero .box .outerbox{
+.hero .box .outerbox {
     display: flex;
     flex-direction: row;
     padding: 1rem 5%;
     gap: 2rem;
 }
 
-.hero .box .outerbox .innerbox{
-    padding: 1rem 10%; 
+.hero .box .outerbox .innerbox {
+    padding: 1rem 10%;
 
 }
 
-.hero .box .outerbox .innerbox .head{
+.hero .box .outerbox .innerbox .head {
     font-size: 45px;
     color: white;
     font-weight: 700;
     letter-spacing: 2px;
-    margin-bottom:  1rem;
+    margin-bottom: 1rem;
 }
-.hero .box .outerbox .innerbox .des{
+
+.hero .box .outerbox .innerbox .des {
     color: rgba(255, 255, 255, 0.418);
     font-size: 16px;
     font-weight: 400;
     margin-bottom: 1.5rem;
 }
 
-.hero .box .outerbox .innerbox span{
+.hero .box .outerbox .innerbox span {
     margin-left: 2rem;
     font-size: 35px;
     font-weight: 800;
     color: white;
-    
+
 }
-.innerbox1{
+
+.innerbox1 {
     background-color: #a8f1d913;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -140,30 +142,33 @@
     border-radius: 3rem;
 }
 
-.innerbox1 input, button{
+.innerbox1 input,
+button {
     grid-column-start: 1;
     grid-column-end: 3;
-    
+
 }
-.innerbox1 .herobutton{
+
+.innerbox1 .herobutton {
     background-color: #0E3B2C;
     border-radius: 2rem;
     color: white;
     font-weight: 500;
     font-size: 20px;
 }
-.innerbox1 input{
+
+.innerbox1 input {
     border-radius: 2rem;
 
 }
 
 
-@media (max-width : 1160px){
-    .header{
+@media (max-width : 1160px) {
+    .header {
         flex-direction: column;
     }
 
-    .navbar{
+    .navbar {
         margin-top: 1rem;
         display: flex;
         justify-content: center;
@@ -176,21 +181,21 @@
     }
 }
 
-@media (max-width : 1000px){
-    .hero .box .outerbox{
+@media (max-width : 1000px) {
+    .hero .box .outerbox {
         flex-direction: column;
         gap: 1rem;
     }
-    .hero{
+
+    .hero {
         height: 95vh;
     }
-    .hero .box .rental{
+
+    .hero .box .rental {
         margin-left: 30%;
     }
-    .hero .box .outerbox .innerbox{
+
+    .hero .box .outerbox .innerbox {
         text-align: center;
     }
 }
-
-
-
