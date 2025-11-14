@@ -176,5 +176,21 @@
     }
 }
 
+@media (max-width : 1000px){
+    .hero .box .outerbox{
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .hero{
+        height: 95vh;
+    }
+    .hero .box .rental{
+        margin-left: 30%;
+    }
+    .hero .box .outerbox .innerbox{
+        text-align: center;
+    }
+}
+
 
 
