@@ -165,6 +165,7 @@ button {
 .reviews{
     text-align: center;
     padding: 2rem 5%;
+    margin-bottom: 2rem;
 }
 
 .boxouter{
@@ -198,6 +199,45 @@ button {
     margin-bottom: 1rem;
 }
 
+.agent{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    padding: 2rem 5%;
+}
+
+.left{
+    padding: 1rem 5%;
+}
+
+.left h4{
+    color: #0e3b2c4d;
+    margin-bottom: 2px;
+}
+
+.left h2{
+    color: #0E3B2C;
+    margin-bottom: 1rem;
+}
+
+.left p{
+    margin-bottom: 1rem;
+    word-spacing: 2px;
+}
+
+.left button{
+    background-color: #2C4C3D;
+    padding: 1rem;
+    border-radius: 2rem;
+    margin-left: 2rem;
+    margin-top: 2rem;    
+    color: white;
+    font-weight: 600;
+}
+
+.right img{
+    border-radius: 2rem;
+}
 @media (max-width : 1160px) {
     .header {
         flex-direction: column;
@@ -236,6 +276,14 @@ button {
 
     .boxouter{
         grid-template-columns: repeat(2,1fr);
+    }
+
+    .agent{
+        flex-wrap: wrap;
+    }
+
+    .agent .right img{
+        object-fit: cover;    
     }
 }
 
