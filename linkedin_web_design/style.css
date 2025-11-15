@@ -73,7 +73,7 @@
 
 .hero {
     background-color: #2C4C3D;
-    height: 80vh;
+    height: 70vh;
 }
 
 .hero .box {
@@ -168,7 +168,8 @@ button {
 }
 
 .boxouter{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
     gap: 1rem;
     padding: 1rem;
     align-items: center;
@@ -222,7 +223,7 @@ button {
     }
 
     .hero {
-        height: 95vh;
+        height: 75vh;
     }
 
     .hero .box .rental {
@@ -234,6 +235,12 @@ button {
     }
 
     .boxouter{
-        flex-wrap: wrap;
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media (max-width: 750px){
+    .boxouter{
+        grid-template-columns: repeat(1,1fr);
     }
 }
