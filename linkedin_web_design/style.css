@@ -162,6 +162,40 @@ button {
 
 }
 
+.reviews{
+    text-align: center;
+    padding: 2rem 5%;
+}
+
+.boxouter{
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.boxinner{
+    border: 1px groove black;
+    background-color: #0E3B2C;
+    padding: 1rem;
+    border-radius: 2rem;
+}
+
+.boxinner .name{
+    color: white;
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 1rem;
+} 
+
+.boxinner img{
+    background-color: white;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    margin-bottom: 1rem;
+}
 
 @media (max-width : 1160px) {
     .header {
@@ -197,5 +231,9 @@ button {
 
     .hero .box .outerbox .innerbox {
         text-align: center;
+    }
+
+    .boxouter{
+        flex-wrap: wrap;
     }
 }
