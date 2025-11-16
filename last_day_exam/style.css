@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.head {
+    position: sticky;
+    top: 0;
+    z-index: 100px;
+    padding: 2rem 5%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+}
+
+.logo span {
+    color: red;
+}
+
+.navbar ul li {
+    display: inline-block;
+    margin-left: 2rem;
+}
+
+.hero {
+    background: url("hero_img.JPG") center center/cover no-repeat;
+    height: 100vh;
+}
+
+.about {
+    padding: 2rem 5%;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.about h2 {
+    margin-bottom: 1.5rem;
+}
+
+.see_btn {
+    margin-top: 1.5rem;
+    padding: 0.7rem;
+    border: 2px groove blue;
+    background-color: white;
+    font-weight: 600;
+    cursor: pointer;
+    color: blue;
+}
+
+.service {
+    padding: 2rem 5%;
+    margin-top: 1rem;
+    background-color: rgba(34, 105, 235, 0.63);
+}
+
+.outerbox {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.innerbox {
+    padding: 1rem;
+    text-align: center;
+    color: white;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.innerbox img {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.visit {
+    background-color: rgba(29, 28, 28, 0.678);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    padding: 2rem 5%;
+}
+
+.visit button {
+    padding: 1rem;
+    color: blue;
+    margin-top: 1rem;
+    border: 1px groove blue;
+}
+
+.galry {
+    text-align: center;
+    padding: 2rem 5%;
+    margin-top: 2rem;
+
+}
+
+.gallary {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    padding: 1rem 5%;
+    gap: 0.7rem;
+}
+
+.gallary img {
+    height: 120px;
+    width: 100%;
+}
+
+.last {
+    background-color: rgba(2, 2, 2, 0.733);
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 5%;
+}
+
+.last i {
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.last .book_btn {
+    padding: 1rem;
+    color: blue;
+    border: 1px groove blue;
+}
+
+footer {
+    padding: 2rem 5%;
+    text-align: center;
+    font-size: 18px;
+    background-color: rgba(0, 119, 255, 0.849);
+    color: white;
+}
+
+footer p {
+    margin-bottom: 1rem;
+}
