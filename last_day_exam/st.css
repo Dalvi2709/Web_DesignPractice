@@ -1,0 +1,13 @@
+.hero {
+    background: url("hero_img.JPG") center center/cover no-repeat;
+    height: 100vh;
+}
+
+.visit {
+    background-color: rgba(29, 28, 28, 0.678);
+}
+
+.service-img {
+    height: 80px;
+    width: 80px;
+}
